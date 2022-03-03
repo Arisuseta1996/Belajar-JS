@@ -16,15 +16,53 @@
 
 // latihan buah
 
-var jmlOjk = 10;
-var ojkBeroperasi = 9;
-var iOjk = 1;
+
 // beroperasi
-while(iOjk <= ojkBeroperasi){
-    console.log('Ojek No. '+iOjk+' beroperasi');
-    iOjk++;
-}
+// while(iOjk <= ojkBeroperasi){
+    //     console.log('Ojek No. '+iOjk+' beroperasi');
+//     iOjk++;
+// }
 // belum ke bengkel
-for (iOjk = ojkBeroperasi + 1; iOjk <= jmlOjk; iOjk++) {
-    console.log('Ojek No. '+iOjk+' lagi rusak("belum ke bengkel")');
+// for (iOjk = ojkBeroperasi + 1; iOjk <= jmlOjk; iOjk++) {
+//     console.log('Ojek No. '+iOjk+' lagi rusak("belum ke bengkel")');
+// }
+
+// no 1 - 4 beroperasi
+// no 5 - 7 lembur
+// sisa rusak
+
+var jmlOjk = 10;
+var ojkBeroperasi = 4;
+
+for(var iOjk = 1; iOjk <= 10; iOjk++){
+    
+    if(iOjk <= 4 ){
+        console.log('OJK No. '+iOjk+ ' beroperasi');
+    } else if(iOjk <= jmlOjk && iOjk !== 9 && iOjk !== 10){
+        console.log('OJK No. '+iOjk+ ' lembur');    
+    } else {
+        console.log('OJK No. '+iOjk+ ' tidak beroperasi');
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
